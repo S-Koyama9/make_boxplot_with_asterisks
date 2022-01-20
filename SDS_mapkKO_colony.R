@@ -8,7 +8,7 @@ p_SDS_mapk <- ggplot(d_SDS_mapk, aes(x=strain, y=diameter)) + geom_boxplot(width
 p_SDS_mapk <- p_SDS_mapk + scale_x_discrete(limit=c('WT', 'mak2', 'so', 'proA', 'cdc25', 'veA'))
 p_SDS_mapk <- p_SDS_mapk + theme_classic()
 p_SDS_mapk <- p_SDS_mapk + labs(
-  y = "colony diameter [cm]", x= ""
+  y = "Change of colony diameter [cm]", x= ""
 )+
   theme(
     axis.title = element_text(size = 14)
