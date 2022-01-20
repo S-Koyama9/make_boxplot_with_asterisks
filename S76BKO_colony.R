@@ -7,7 +7,7 @@ theme_set(theme_set(theme_classic() + theme(legend.position = "top")))
 p_S76BKO <- ggplot(d_S76BKO, aes(x=strain, y=diameter)) + geom_boxplot(width = 0.4)
 p_S76BKO
 p_S76BKO <- p_S76BKO + scale_x_discrete(limit=c('WT', 'E.IS76', '76BKO-6', '76BKO-8'))
-p_S76BKO
+p_S76BKO <- p_S76BKO + ylim(0,5.5)
 p_S76BKO <- p_S76BKO + theme_classic()
 p_S76BKO <- p_S76BKO + labs(
   y = "colony diameter [cm]", x= ""
