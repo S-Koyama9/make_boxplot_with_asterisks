@@ -8,3 +8,11 @@ p_S76BKO <- ggplot(d_S76BKO, aes(x=strain, y=diameter)) + geom_boxplot()
 p_S76BKO
 p_S76BKO <- p_S76BKO + scale_x_discrete(limit=c('WT', 'E.IS76', '76BKO-6', '76BKO-8'))
 p_S76BKO
+p_S76BKO <- p_S76BKO + theme_classic()
+p_S76BKO <- p_S76BKO + labs(
+  y = "colony diameter [cm]", x= ""
+  )+
+  theme(
+    axis.title = element_text(size = 14)
+    )
+p_S76BKO
